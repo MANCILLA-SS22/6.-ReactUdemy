@@ -1,5 +1,14 @@
 import { createContext, useReducer } from "react";
 
+/* //Metodo 1: crear contexto estableciendo paramateros por defecto (no es obligatorio pero si requerido) 
+export const CartContext = createContext({
+    items: [],
+    totalAmount: 0,
+    addItem: function(item){},
+    removeItem: function(id){}
+}); */
+
+//Metodo 2: crear contexto sin establecer parametros dentro
 export const CartContext = createContext();
 
 const defaultCartState = {

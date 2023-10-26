@@ -1,11 +1,11 @@
-// import { createContext } from "react";
+import { createContext } from "react";
 
 // Setting defaults inside createContext() is recommended but not always required. The defaults improves IDE intellisense (code hinting)
-// const CartContext = createContext({
-//     items: [],
-//     totalAmount: 0,
-//     addItem: function(item){},
-//     removeItem: function(id){}
-// });
+const CartContext = createContext({
+    items: [],
+    totalAmount: 0,
+    addItem: function(item){},
+    removeItem: function(id){}
+});
 
-// export default CartContext;
+export default CartContext;
